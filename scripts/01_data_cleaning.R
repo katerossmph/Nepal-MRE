@@ -1,0 +1,11 @@
+library(tidyverse)
+library(lubridate)
+library(janitor)
+library(scales)
+# library(epitools)
+library(ggthemes)
+library(viridis)
+library(skimr)
+
+raw_data <- read.csv("NEP-2017-23.csv")
+saveRDS(raw_data, "data/raw/raw_data.rds")
